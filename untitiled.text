@@ -1,0 +1,47 @@
+# vh vs % 
+A % length is relative to local context (containing element) width, while a vw length is relative to the full width of the browser window.
+
+# overflow property 
+visible	    The overflow is not clipped. It renders outside the element's box. This is default	Demo ❯
+hidden	    The overflow is clipped, and the rest of the content will be invisible	Demo ❯
+scroll	    The overflow is clipped, but a scroll-bar is added to see the rest of the content	Demo ❯
+auto	    If overflow is clipped, a scroll-bar should be added to see the rest of the content	Demo ❯
+initial	    Sets this property to its default value. Read about initial	
+inherit	    Inherits this property from its parent element. Read about inherit
+
+# border-box 
+div {
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    border: 8px solid red;
+    background: yellow;
+  }
+  
+  .content-box {
+    box-sizing: content-box;
+    /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+       Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+       Content box width: 160px
+       Content box height: 80px */
+  }
+  
+  .border-box {
+    box-sizing: border-box;
+    /* Total width: 160px
+       Total height: 80px
+       Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
+       Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
+  }
+
+#   to center item inside div bewlow three properties are sufficient 
+(try with title)
+display: flex;
+flex-direction: row (this is default);
+justify-content: center;  (horizontally or vertically depending upon the flex-direction)
+align-items: center;  (horizontally or vertically depending upon the flex-direction)
+
+# flex-wrap 
+so important was to make container 
+
+
